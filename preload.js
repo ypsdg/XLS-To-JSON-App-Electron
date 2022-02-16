@@ -15,7 +15,8 @@ window.addEventListener('DOMContentLoaded', () => {
   const dropzone = document.getElementById("dropzone");
  console.log(dropzone);
 
-document.body.addEventListener("dragover", evt => {
+
+ document.body.addEventListener("dragover", evt => {  /*This is necessary otherwise the 'drop' listener wont work */
   evt.preventDefault();
 });
 
@@ -35,16 +36,10 @@ dropzone.addEventListener("drop", (e) =>{
           allowEmptyKey: false,
         },
         function (err,result) {
-          if(err){
-            console.log(err);
-          }else{
-            console.log(result);
-          }
+          if(err){console.log(err);}
         }
       )
      }
-
-  
   })
 })
 

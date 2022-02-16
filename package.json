@@ -1,6 +1,6 @@
 {
-  "name": "Fiddle",
-  "productName": "Fiddle",
+  "name": "openSAP JSON Converter",
+  "productName": "openSAP JSON Converter",
   "description": "My Electron application description",
   "keywords": [],
   "main": "./main.js",
